@@ -226,7 +226,8 @@ header {
 .hamburger::after {
     background: var(--clr-accent);
     width: 2em;
-    height: 3px;
+    height: 4px;
+    background-color:#303030;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
@@ -239,9 +240,8 @@ header {
     right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
-
+.hamburger::before { top: 8px; }
+.hamburger::after { bottom: 8px; }
 
 /*  Intro section  */
 
