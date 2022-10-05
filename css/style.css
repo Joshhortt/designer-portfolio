@@ -500,6 +500,10 @@ header {
     text-decoration: underline;
 }
 
+.footer__link3 {
+    font-weight: var(--fw-bold);
+}
+
 .social-list {
     list-style: none;
     display: flex;
