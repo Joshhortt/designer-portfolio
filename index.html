@@ -28,7 +28,7 @@
     <!-- My Logo and Hamburger Menu START -->
     <header>
       <div class="logo">
-        <img src="img/glow_logo.png" alt="" />
+        <img src="img/glow_logo-min.png" alt="" />
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
@@ -45,6 +45,11 @@
           <li class="nav__item">
             <a href="#work" class="nav__link">Portfolio</a>
           </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+
         </ul>
       </nav>
     </header>
@@ -56,13 +61,23 @@
         Hi, I am <strong>Juliana Zatkova</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">
-        Make up Artist | Hair Stylist | Beautician
+        Professional Makeup Artist | Hair Stylist
       </p>
-      <img
+
+      <!-- <picture class="class" ="intro__img">
+        <source srcset="img/juliana.webp" type="image/webp" />
+        <img src="img/juliana-min.PNG" alt="a picture of Juliana Zatkova" />
+      </picture> -->
+      <picture class="intro__img">
+        <source srcset="img/juliana.webp" type="image/webp" />
+        <img src="img/juliana-who-min.png" alt="a picture of Juliana Zatkova" />
+      </picture>
+
+      <!-- <img
         src="img/juliana-min.PNG"
         alt="a picture of Juliana Zatkova"
         class="intro__img"
-      />
+      /> -->
     </section>
     <!-- My Intro END-->
 
@@ -71,19 +86,18 @@
       <h2 class="section__title section__title--services">What I do</h2>
       <div class="services">
         <div class="service">
-          <h3>Make Up</h3>
+          <h3>Make-up</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.do.
+            I specialize in creating a wide range of makeup looks for every occasion. Whether you prefer a natural, elegant style or something bold and glamorous, I'm here to bring your vision to life.
           </p>
         </div>
         <!-- / service -->
 
         <div class="service">
-          <h3>Lashes</h3>
+          <h3>Skin-care</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            My passion is helping you achieve healthy, radiant skin. I offer personalized skincare treatments that enhance your natural glow and promote the well-being of your skin.
+
           </p>
         </div>
         <!-- / service -->
@@ -91,8 +105,7 @@
         <div class="service">
           <h3>Hair-styling</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            My team and I are dedicated to transforming your appearance through expert hair styling. We'll work closely with you to craft customized looks that complement your unique beauty.
           </p>
         </div>
         <!-- / service -->
@@ -109,18 +122,12 @@
       <p class="section__subtitle section__subtitle--about">Creative & Happy</p>
 
       <div class="about-me__body">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+        <q>
+          I am Juliana, a freelance makeup artist based in Manchester.<br>
+          I work in fashion, beauty, celebrity, stage, bridal fields,<br>
+          parties & events and photo shooting. 
+        </q>
+       
       </div>
 
       <picture class="about-me__img">
@@ -128,11 +135,6 @@
         <img src="img/juliana-who-min.png" alt="Juliana at fashion week" />
       </picture>
 
-      <!-- <img
-        src="img/juliana-who-min.PNG"
-        alt="Juliana at fashion week"
-        class="about-me__img"
-      /> -->
     </section>
     <!-- About me END -->
 
@@ -169,39 +171,42 @@
           <img src="img/model_5-min.PNG" alt="" class="portfolio__img" />
         </a>
 
-        <!-- Portfolio item 06 -->
-        <a href="portfolio-item.html" class="portfolio__item">
-          <img src="img/portfolio-06.jpg" alt="" class="portfolio__img" />
-        </a>
 
-        <!-- Portfolio item 07 -->
-        <a href="portfolio-item.html" class="portfolio__item">
-          <img src="img/portfolio-07.jpg" alt="" class="portfolio__img" />
-        </a>
-
-        <!-- Portfolio item 08 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-08.jpg" alt="" class="portfolio__img" />
-        </a>
-
-        <!-- Portfolio item 09 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-09.jpg" alt="" class="portfolio__img" />
-        </a>
-
-        <!-- Portfolio item 10-->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-10.jpg" alt="" class="portfolio__img" />
-        </a>
       </div>
     </section>
     <!-- Portfolio Photos and Services END-->
 
+  </section>
+
+  <!-- Contact START-->
+  <section class="contact" id="contact">
+    <h2 class="contact-title">Contact</h2>
+    <p class="contact-paragraph">For bookings and enquiries please fill in contact form:</p>
+    <p>Alternatively, call me directly on +44 (0) 7522 290188 or send an email to glowjuliana@gmail.com</p>
+    <form action="">
+      <label class="name" class="name">Name:
+          <input type="text" id="name">
+      </label>
+      
+      <label class="email" class="email">Email:
+        <input type="email" id="email">
+      </label>
+
+      <label message="message" class="message">Message:
+        <textarea name="" id="message"></textarea>
+      </label>
+
+      <input class="button form-button" type="submit" value="SEND">
+
+    </form>
+  </section>
+<!-- Contact END-->
+
     <!-- Footer START-->
     <footer class="footer">
       <!-- o teu email aqui -->
-      <a href="mailto:julesivar@gmail.com" class="footer__link"
-        >E-mail: julesivar@gmail.com</a
+      <a href="mailto:glowbyjuliana@gmail.com" class="footer__link"
+        >E-mail: glowbyjuliana@gmail.com</a
       >
       | <a href="#" class="footer__link2">Phone: +44 7522 290188</a>
       <br /><br />

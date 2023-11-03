@@ -14,8 +14,9 @@
   --fw-bold: 600;
 
   --clr-light: #fff;
-  --clr-dark: #303030;
+  --clr-dark: #111111;
   --clr-accent: #dbe3e8;
+  --clr-background: #303030;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -78,7 +79,7 @@ strong {
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
@@ -145,6 +146,10 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+}
+
+a.footer__link {
+  margin: 10px; /* Adjust the value to control the amount of space */
 }
 
 .logo {
@@ -264,6 +269,117 @@ header {
   display: inline-block;
 }
 
+// .section__subtitle--intro,
+// .section__subtitle--about .contact {
+//   height: 70vh;
+//   width: 75vh;
+//   align-items: center;
+// }
+
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 5em 0;
+}
+.contact h2,
+p {
+  text-align: center;
+}
+
+.contact-title {
+  color: #c20372;
+}
+.contact-paragraph {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@supports (display: grid) {
+  @media (min-width: 50em) {
+    form {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-column-gap: 1em;
+
+      grid-template-areas: "name     email" "message message" "   .      button";
+    }
+
+    form .name {
+      grid-area: name;
+    }
+    form .email {
+      grid-area: email;
+    }
+    form .message {
+      grid-area: message;
+    }
+    form .message textarea {
+      height: 10em;
+    }
+    form .button {
+      grid-area: button;
+    }
+
+    form .button:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  color: #606060;
+}
+
+input,
+textarea {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  padding: 0.75em;
+  width: 100%;
+  min-width: 15em;
+  background: #dbe3e8;
+  border: 1px solid #c6cdd1;
+  font-size: 1.2rem;
+}
+
+textarea {
+  resize: vertical;
+  outline: none;
+}
+
+.button {
+  display: inline-block;
+  width: auto;
+  min-width: auto;
+  margin-top: 1em;
+  margin-left: auto;
+  background: #c20372;
+  border: none;
+  font-size: 2.5rem;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: "Six Caps", sans-serif;
+  font-weight: 400;
+  padding: 0.5em 1.5em;
+}
+
 @media (min-width: 600px) {
   .intro {
     display: grid;
@@ -297,7 +413,7 @@ header {
 /*  My services section  */
 
 .my-services {
-  background-color: var(--clr-dark);
+  background-color: var(--clr-background);
   background-image: url(../img/banner-beauty-min.png);
   background-size: cover;
   background-blend-mode: overlay;
@@ -348,9 +464,9 @@ header {
   margin: 0 auto;
 }
 
-.about-me__img {
-  box-shadow: var(--bs);
-}
+// .about-me__img {
+//   box-shadow: var(--bs);
+// }
 
 @media (min-width: 600px) {
   .about-me {
