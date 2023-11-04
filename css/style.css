@@ -79,7 +79,7 @@ strong {
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
@@ -135,7 +135,7 @@ h3 {
 }
 
 .section__subtitle--work {
-  color: var(--clr-accent);
+  color: var(--clr-dark);
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
 }
@@ -370,12 +370,11 @@ textarea {
   margin-left: auto;
   background: #c20372;
   border: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 0.15em;
   color: #ffffff;
   text-transform: uppercase;
   line-height: 1;
-  font-family: "Six Caps", sans-serif;
   font-weight: 400;
   padding: 0.5em 1.5em;
 }
@@ -423,7 +422,7 @@ textarea {
 }
 
 .section__title--services {
-  color: var(--clr-accent);
+  color: var(--clr-light);
   position: relative;
 }
 
@@ -503,9 +502,13 @@ textarea {
 /* My Work */
 
 .my-work {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
+  background-color: var(--clr-accent);
+  color: var(--clr-dark);
   text-align: center;
+}
+
+.portfolio__item {
+  margin: 5px; /* Add a 5px margin around each portfolio item */
 }
 
 .portfolio {
